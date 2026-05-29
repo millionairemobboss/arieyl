@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python main_online.py *)",
+      "Bash(python main_local.py *)",
+      "Bash(python main_online_noelevenlabs.py *)",
+      "Bash(python multimodal_live_api.py *)",
+      "Bash(python -m pytest *)",
+      "Bash(python test/*)",
+      "Bash(pip install *)",
+      "Bash(pip list *)",
+      "Bash(pip show *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(python -c *)",
+      "Bash(python -m *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)"
+    ]
+  }
+}
