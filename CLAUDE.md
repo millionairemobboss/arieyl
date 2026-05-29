@@ -1,3 +1,38 @@
+# ADA — Advanced Design Assistant + Three-Brain Stack
+
+## Three-Brain Setup (Claude + Codex + Gemini)
+
+This repo runs a three-brain routing system. Claude drives. Codex reviews and rescues. Gemini handles multimodal + long-context.
+
+| Brain | Role | CLI |
+|---|---|---|
+| Claude (you) | Build, edit, plan | — |
+| Codex (GPT-5.5) | Review, adversarial review, rescue | `codex` |
+| Gemini 2.5 Pro | Video, audio, PDF, whole-repo scan | `gemini` |
+
+**Key plugins (install once in Claude Code):**
+```
+/plugin marketplace add openai/codex-plugin-cc
+/plugin install codex@openai-codex
+/plugin marketplace add thepushkarp/cc-gemini-plugin
+/plugin install cc-gemini-plugin@cc-gemini-plugin
+/reload-plugins
+```
+
+**Key CLIs (install once on your machine):**
+```bash
+npm install -g @openai/codex
+npm install -g @google/gemini-cli
+codex login
+gemini auth
+```
+
+The `/three-brain` skill auto-routes — you don't invoke it manually. It fires on review requests, risky file edits, media files, and rescue situations. See `.claude/skills/three-brain/SKILL.md` for the full routing rules.
+
+**MCP:** Firecrawl is wired via `.mcp.json` — set `FIRECRAWL_API_KEY` in your env.
+
+---
+
 # ADA — Advanced Design Assistant
 
 ADA is a real-time voice AI assistant built on Google Gemini + ElevenLabs. It supports both a local mode (Ollama LLM + system TTS) and an online mode (Gemini Live API + ElevenLabs WebSocket streaming).
