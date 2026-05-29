@@ -1,7 +1,7 @@
 import BitcoinRain from './BitcoinRain'
 
-// Swap this for the generated video URL when ready
-const HERO_VIDEO_SRC = ''
+// Hero background video — served from /public/hero-scroll.mp4
+const HERO_VIDEO_SRC = '/hero-scroll.mp4'
 
 interface VideoHeroProps {
   onWatchClick: () => void
@@ -42,12 +42,21 @@ export default function VideoHero({ onWatchClick }: VideoHeroProps) {
             'radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,213,255,0.1) 0%, transparent 50%)',
         }}
       />
-      {/* Video overlay darkening */}
+      {/* Video overlay — darkens + tints the video so text stays readable */}
       {HERO_VIDEO_SRC && (
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{ background: 'rgba(3,3,5,0.65)' }}
-        />
+        <>
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{ background: 'rgba(3,3,5,0.58)' }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'linear-gradient(180deg, rgba(3,3,5,0.3) 0%, rgba(3,3,5,0.1) 40%, rgba(3,3,5,0.5) 80%, rgba(3,3,5,1) 100%)',
+            }}
+          />
+        </>
       )}
 
       {/* ── Content ── */}
