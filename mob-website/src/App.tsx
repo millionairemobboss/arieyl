@@ -1,39 +1,32 @@
-import AnnouncementBar from './components/AnnouncementBar'
-import HeaderNav from './components/HeaderNav'
-import HeroSection from './components/HeroSection'
-import TrustStrip from './components/TrustStrip'
-import FeatureGrid from './components/FeatureGrid'
-import HowItWorks from './components/HowItWorks'
-import PackageLadder from './components/PackageLadder'
-import MatrixExplainer from './components/MatrixExplainer'
-import TrainingLibrary from './components/TrainingLibrary'
-import ProofSection from './components/ProofSection'
-import WalletSetup from './components/WalletSetup'
-import FAQSection from './components/FAQSection'
-import FinalCTA from './components/FinalCTA'
-import FooterDisclosure from './components/FooterDisclosure'
-import StickyMobileCTA from './components/StickyMobileCTA'
+import { useRef } from 'react'
+import TeamNav from './components/team/TeamNav'
+import VideoHero from './components/team/VideoHero'
+import TeamIntro from './components/team/TeamIntro'
+import VideoShowcase from './components/team/VideoShowcase'
+import WhyBitcoin from './components/team/WhyBitcoin'
+import JoinTeamCTA from './components/team/JoinTeamCTA'
+import TeamFooter from './components/team/TeamFooter'
+import ScrollingBitcoin from './components/team/ScrollingBitcoin'
 
 export default function App() {
+  const videoSectionRef = useRef<HTMLElement>(null)
+
+  const scrollToVideos = () => {
+    videoSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <div style={{ background: '#030305', minHeight: '100vh' }}>
-      <AnnouncementBar />
-      <HeaderNav />
+      <ScrollingBitcoin />
+      <TeamNav />
       <main>
-        <HeroSection />
-        <TrustStrip />
-        <FeatureGrid />
-        <HowItWorks />
-        <PackageLadder />
-        <MatrixExplainer />
-        <TrainingLibrary />
-        <ProofSection />
-        <WalletSetup />
-        <FAQSection />
-        <FinalCTA />
+        <VideoHero onWatchClick={scrollToVideos} />
+        <TeamIntro />
+        <VideoShowcase ref={videoSectionRef} />
+        <WhyBitcoin />
+        <JoinTeamCTA />
       </main>
-      <FooterDisclosure />
-      <StickyMobileCTA />
+      <TeamFooter />
     </div>
   )
 }
