@@ -1,0 +1,107 @@
+{
+  "/home/user/arieyl/main_local.py": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "ce767142785eef402563d81fecf1f9c5",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/multimodal_live_api.py": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "dd3ccc0e95a7f261b9cb93fae85233d7",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/main_online.py": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "029290b0229651e6e776c42e89267e1f",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/main_online_noelevenlabs.py": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "67e377ea5f925cfd7ae93e1ff603c6f3",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/.mcp.json": {
+    "mtime": 1780069382.3210173,
+    "ast_hash": "c69c93b25f525a6f80f38afdc52600b9",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/test/function_call_accuracy_test.py": {
+    "mtime": 1779927852.298048,
+    "ast_hash": "9f10be58020f72992608c8edffda066c",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/test/basic_tts.py": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "30bae0e98ab3f3c8c3864e282c125db0",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/test/tts_latency_test.py": {
+    "mtime": 1779927852.298048,
+    "ast_hash": "c4cca500246be9fd26788d13303ce4b2",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/ADA_Online_NoElevenlabs.py": {
+    "mtime": 1779927852.2911801,
+    "ast_hash": "acb5bb31027b3e333d14925bba8c90d3",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/ADA_Local.py": {
+    "mtime": 1779927852.285683,
+    "ast_hash": "a0d893bdb5227ad6b282db153beef74c",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/ADA_Online.py": {
+    "mtime": 1779927852.2911801,
+    "ast_hash": "9b2de6003706f8246fc5c3b10dac003e",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/WIDGETS/camera.py": {
+    "mtime": 1779927852.2928216,
+    "ast_hash": "591c9318078113b81e440b005e3a7329",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/WIDGETS/system.py": {
+    "mtime": 1779927852.2928216,
+    "ast_hash": "ef75866461631c267afa571c1d6ad120",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/WIDGETS/project.py": {
+    "mtime": 1779927852.2928216,
+    "ast_hash": "31991c26ad0b4347fc33497c1c0ba334",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/WIDGETS/timer.py": {
+    "mtime": 1779927852.2928216,
+    "ast_hash": "2fd21e37ff1cf745ab37d2174fdd5eef",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/ADA/WIDGETS/to_do_list.py": {
+    "mtime": 1779927852.2928216,
+    "ast_hash": "9215a40ec4762eefd1b6e5c641d8ad08",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/.claude/settings.local.json": {
+    "mtime": 1780068949.0730197,
+    "ast_hash": "536b256a617c2aadced4dabdc5550eec",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/.claude/settings.json": {
+    "mtime": 1780070074.946044,
+    "ast_hash": "bce3cc39735da64afe07beb613d3488e",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/README.md": {
+    "mtime": 1779927852.2956731,
+    "ast_hash": "c44fa8bf5bf5d734fc48f696e7b5f3ce",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/CLAUDE.md": {
+    "mtime": 1780070074.9455466,
+    "ast_hash": "ca629185ad44eb62fa0bec01fb980cb1",
+    "semantic_hash": ""
+  },
+  "/home/user/arieyl/.claude/skills/three-brain/SKILL.md": {
+    "mtime": 1780069372.0530171,
+    "ast_hash": "03a854629b41911a26a9060dd00a7f1c",
+    "semantic_hash": ""
+  }
+}
