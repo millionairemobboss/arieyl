@@ -1,32 +1,31 @@
-import { useRef } from 'react'
-import TeamNav from './components/team/TeamNav'
-import VideoHero from './components/team/VideoHero'
-import TeamIntro from './components/team/TeamIntro'
-import VideoShowcase from './components/team/VideoShowcase'
-import WhyBitcoin from './components/team/WhyBitcoin'
-import JoinTeamCTA from './components/team/JoinTeamCTA'
-import TeamFooter from './components/team/TeamFooter'
-import ScrollingBitcoin from './components/team/ScrollingBitcoin'
+import AnnouncementBar from './components/v2/AnnouncementBar'
+import NavBar        from './components/v2/NavBar'
+import HeroSection   from './components/v2/HeroSection'
+import FeatureStrip  from './components/v2/FeatureStrip'
+import WhatYouGet    from './components/v2/WhatYouGet'
+import HowItWorks    from './components/v2/HowItWorks'
+import PackageLevels from './components/v2/PackageLevels'
+import MatrixTraining from './components/v2/MatrixTraining'
+import ProofSection  from './components/v2/ProofSection'
+import FinalCTA      from './components/v2/FinalCTA'
+import SiteFooter    from './components/v2/SiteFooter'
 
 export default function App() {
-  const videoSectionRef = useRef<HTMLElement>(null)
-
-  const scrollToVideos = () => {
-    videoSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
   return (
     <div style={{ background: '#030305', minHeight: '100vh' }}>
-      <ScrollingBitcoin />
-      <TeamNav />
+      <AnnouncementBar />
+      <NavBar />
       <main>
-        <VideoHero onWatchClick={scrollToVideos} />
-        <TeamIntro />
-        <VideoShowcase ref={videoSectionRef} />
-        <WhyBitcoin />
-        <JoinTeamCTA />
+        <HeroSection />
+        <FeatureStrip />
+        <WhatYouGet />
+        <HowItWorks />
+        <PackageLevels />
+        <MatrixTraining />
+        <ProofSection />
+        <FinalCTA />
       </main>
-      <TeamFooter />
+      <SiteFooter />
     </div>
   )
 }
