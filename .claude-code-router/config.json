@@ -1,0 +1,55 @@
+{
+  "LOG": true,
+  "LOG_LEVEL": "info",
+  "API_TIMEOUT_MS": 600000,
+  "NON_INTERACTIVE_MODE": false,
+  "Providers": [
+    {
+      "name": "anthropic",
+      "api_base_url": "https://api.anthropic.com/v1/messages",
+      "api_key": "$ANTHROPIC_API_KEY",
+      "models": [
+        "claude-sonnet-4-6",
+        "claude-opus-4-8",
+        "claude-haiku-4-5-20251001"
+      ],
+      "transformer": {
+        "use": ["Anthropic"]
+      }
+    },
+    {
+      "name": "gemini",
+      "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
+      "api_key": "$GOOGLE_API_KEY",
+      "models": [
+        "gemini-2.5-pro-preview-06-05",
+        "gemini-2.5-flash-preview-05-20"
+      ],
+      "transformer": {
+        "use": ["gemini"]
+      }
+    },
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "$OPENROUTER_API_KEY",
+      "models": [
+        "openai/gpt-4.1",
+        "openai/o3",
+        "meta-llama/llama-4-maverick",
+        "deepseek/deepseek-r1-0528"
+      ],
+      "transformer": {
+        "use": ["openrouter"]
+      }
+    }
+  ],
+  "Router": {
+    "default": "anthropic,claude-sonnet-4-6",
+    "background": "gemini,gemini-2.5-flash-preview-05-20",
+    "think": "openrouter,deepseek/deepseek-r1-0528",
+    "longContext": "gemini,gemini-2.5-pro-preview-06-05",
+    "longContextThreshold": 60000,
+    "image": "anthropic,claude-sonnet-4-6"
+  }
+}
